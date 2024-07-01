@@ -1,7 +1,12 @@
 public class Cliente {
     private String nome;
-    // public String cpf;
-    // public String email;
+    private String cpf;
+    private Conta conta;
+
+    public Cliente(String nome, String cpf) {
+        this.nome = nome;
+        this.cpf = cpf;
+    }
 
     public String getNome() {
         return nome;
@@ -11,5 +16,19 @@ public class Cliente {
         this.nome = nome;
     }
 
-    
+    public String getCpf() {
+        return cpf;
+    }
+
+    public Conta getConta() {
+        return conta;
+    }
+
+    public void setConta(Conta conta) {
+        this.conta = conta;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
 }
